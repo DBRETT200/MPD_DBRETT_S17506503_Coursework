@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Daniel Brett S1706503-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <TextView android:id="@+id/label1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S1706503"/>
+
+        <TextView
+            android:id="@+id/label3"
+            android:layout_width="275dp"
+            android:layout_height="134dp"
+            android:layout_below="@id/label1"
+            android:layout_centerHorizontal="true"
+            android:text="BGS Earthquake Records"
+            android:textSize="32dp" />
+
+
+        <Button
+            android:id="@+id/enterDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/viewMapButton"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/viewMapButton"
+            android:text="Enter Date" />
+
+        <Button
+            android:id="@+id/viewMapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label3"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="17dp"
+            android:text="View Map" />
+
+        <ToggleButton
+            android:id="@+id/strengthToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/viewMapButton"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/enterDateButton"
+            android:text="Sort List" />
+
+        <TextView
+            android:id="@+id/textDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label3"
+            android:layout_marginTop="72dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ListView
+            android:id="@+id/earthquakeList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewMapButton"
+            android:layout_marginTop="22dp"/>
+
+        <TextView android:id="@+id/label2"
+            android:layout_below="@+id/earthquakeList"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List View"/>
+
+</RelativeLayout>
